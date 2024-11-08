@@ -25,6 +25,6 @@ export default function Home() {
 }
 
 const HomeStyle = {
-  header: 'flex justify-between items-end mt-10 mb-5',
+  header: 'flex justify-between items-end mt-10 mb-2',
   btns: 'flex items-start gap-12 px-5 py-6',
 }

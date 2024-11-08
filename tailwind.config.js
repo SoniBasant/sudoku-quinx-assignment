@@ -21,6 +21,8 @@ module.exports = {
         Grey: 'hsl(231, 7%, 60%)',
         White: 'hsl(0, 0%, 100%)',
         red: 'hsl(0, 97%, 50%)',
+        Green: '#006400',
+        Blue: '#00008b',
       },
       
       fontSize: {

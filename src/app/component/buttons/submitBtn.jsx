@@ -19,6 +19,6 @@ export default function SubmitBtn() {
 
 const styleSubmitBtn= {
   container: 'cursor-pointer flex flex-col justify-center items-center gap-2 md:gap-1 group',
-  icon: 'text-5xl md:text-4xl',
+  icon: 'text-5xl md:text-4xl text-Green',
   text: 'text-xl md:text-sm text-transparent group-hover:text-Grey',
 }
