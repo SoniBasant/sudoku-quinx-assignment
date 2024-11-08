@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,13 +6,36 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
+    screens: {
+      xs: '320px',
+      sm: '426px',
+      md: '769px',
+      lg: '976px',
+      lgmd: '1200px',
+      xl: '1440px',
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        Grey: 'hsl(231, 7%, 60%)',
+        White: 'hsl(0, 0%, 100%)',
+        red: 'hsl(0, 97%, 50%)',
       },
+      
+      fontSize: {
+        'baseSize': '16px',
+        'mediumSize': '14px',
+        'belowSize': '12px',
+      },
+      boxShadow: {
+        'colorShadow': '0px 1px 9px 1px rgba(41, 40, 40, 0.2), 0px -1px 9px 1px rgba(41, 40, 40, 0.2)',
+      },
+      
     },
+  },
+  variants: {
+    fill: ['hover', 'focus'],
   },
   plugins: [],
 };

@@ -3,21 +3,22 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import { Container } from 'postcss';
 
 export default function SubmitBtn() {
   return (
-      <div className={styleLeftArrow.backBtnContainer}>
+      <div className={styleSubmitBtn.container}>
         <FontAwesomeIcon 
             icon={faRightToBracket} 
-            className={styleLeftArrow.leftArrow}
+            className={styleSubmitBtn.icon}
           />
-        {/* <p className={styleLeftArrow.backText}>Submit</p>   */}
+        <p className={styleSubmitBtn.text}>Submit</p>  
       </div>
   )
 }
 
-const styleLeftArrow= {
-  backBtnContainer: 'w-52 md:w-30 lg:w-28 px-4 md:px-3 py-5 md:py-3 cursor-pointer flex justify-center items-center gap-5 md:gap-3 bg-DarkBlueDarkModeElements dark:bg-WhiteDarkModeTextnLightModeElements shadow-colorShadow rounded',
-  leftArrow: 'text-3xl md:text-lg text-WhiteDarkModeTextnLightModeElements dark:text-VeryDarkBlueLightModeText',
-  backText: 'text-xl md:text-sm text-WhiteDarkModeTextnLightModeElements dark:text-VeryDarkBlueLightModeText',
+const styleSubmitBtn= {
+  container: 'cursor-pointer flex flex-col justify-center items-center gap-2 md:gap-1 group',
+  icon: 'text-5xl md:text-4xl',
+  text: 'text-xl md:text-sm text-transparent group-hover:text-Grey',
 }

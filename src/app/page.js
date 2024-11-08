@@ -10,8 +10,10 @@ import SubmitBtn from './component/buttons/submitBtn';
 export default function Home() {
   return (
     <>
-      <Title />
-      <ResetBtn />
+      <div className={HomeStyle.header}>
+        <Title />
+        <ResetBtn />
+      </div>
       <Grid />
       <Message />
       <div className={HomeStyle.btns}>
@@ -23,5 +25,6 @@ export default function Home() {
 }
 
 const HomeStyle = {
-  btns: 'flex'
+  header: 'flex justify-between items-end mt-10 mb-5',
+  btns: 'flex items-start gap-12 px-5 py-6',
 }

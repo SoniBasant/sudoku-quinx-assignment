@@ -1,6 +1,18 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
+
+// fontawesome icons
+// font awesome style
+import '@fortawesome/fontawesome-svg-core/styles.css';
+// fontawesome library provided by react
+import './lib/fontawesome';
+// import configuration of font awesome to modify configuration settings
+import { config } from '@fortawesome/fontawesome-svg-core';
+// Prevent Font Awesome from adding its CSS automatically
+config.autoAddCss = false;
+
+// fonts
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",

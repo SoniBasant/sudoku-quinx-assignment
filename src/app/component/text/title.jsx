@@ -1,6 +1,6 @@
 
 export default function Title() {
   return (
-    <h1>SUDOKU</h1>
+    <h1 className='text-3xl'>SUDOKU</h1>
   )
 }

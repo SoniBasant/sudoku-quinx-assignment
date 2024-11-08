@@ -6,18 +6,18 @@ import { faRotateRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function ResetBtn() {
   return (
-      <div className={resetStyle.container}>
+      <div className={styleResetBtn.container}>
         <FontAwesomeIcon 
             icon={faRotateRight} 
-            className={resetStyle.icon}
+            className={styleResetBtn.icon}
           />
-        {/* <p className={resetStyle.backText}>Reset</p>   */}
+        {/* <p className={styleResetBtn.text}>Reset</p>   */}
       </div>
   )
 }
 
-const resetStyle= {
-  container: 'w-52 md:w-30 lg:w-28 px-4 md:px-3 py-5 md:py-3 cursor-pointer flex flex-col justify-center items-center gap-5 md:gap-3 bg-DarkBlueDarkModeElements dark:bg-WhiteDarkModeTextnLightModeElements shadow-colorShadow rounded',
-  icon: 'text-3xl md:text-lg text-WhiteDarkModeTextnLightModeElements dark:text-VeryDarkBlueLightModeText',
-  backText: 'text-xl md:text-sm text-WhiteDarkModeTextnLightModeElements dark:text-VeryDarkBlueLightModeText',
+const styleResetBtn= {
+  container: 'pb-1 pr-2 cursor-pointer flex flex-col justify-center items-center gap-5 md:gap-3',
+  icon: 'text-3xl md:text-lg',
+  text: 'text-xl md:text-sm text-red',
 }
