@@ -4,19 +4,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareCheck } from '@fortawesome/free-regular-svg-icons';
 
-export default function CheckBtn() {
+export default function ValidateBtn() {
   return (
-      <div className={styleCheckBtn.container}>
+      <div className={styleValidateBtn.container}>
         <FontAwesomeIcon 
             icon={faSquareCheck} 
-            className={styleCheckBtn.icon}
+            className={styleValidateBtn.icon}
           />
-        <small className={styleCheckBtn.text}>Check</small>  
+        <small className={styleValidateBtn.text}>Validate</small>  
       </div>
   )
 }
 
-const styleCheckBtn= {
+const styleValidateBtn= {
   container: 'cursor-pointer flex flex-col justify-center items-center gap-2 md:gap-1 group',
   icon: 'text-5xl md:text-4xl text-Blue',
   text: 'text-transparent group-hover:text-Grey text-xl md:text-sm ',

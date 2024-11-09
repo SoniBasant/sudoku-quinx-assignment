@@ -3,7 +3,7 @@ import Title from './component/text/title';
 import ResetBtn from './component/buttons/resetBtn';
 import Grid from './component/grid/grid';
 import Message from './component/text/message';
-import CheckBtn from './component/buttons/checkBtn';
+import ValidateBtn from './component/buttons/validateBtn';
 import SubmitBtn from './component/buttons/submitBtn';
 
 
@@ -17,7 +17,7 @@ export default function Home() {
       <Grid />
       <Message />
       <div className={HomeStyle.btns}>
-        <CheckBtn />
+        <ValidateBtn />
         <SubmitBtn />
       </div>
     </>
